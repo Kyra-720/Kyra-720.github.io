@@ -14,9 +14,58 @@ and building sizes in Illinois.
 
 <h2>Chart 1: Building Counts by Usage Type</h2>
 <div id="chart1"></div>
+<h3>Chart 1 Analysis</h3>
 
+<p>
+The bar chart shows the number of buildings in Illinois by building usage. 
+I organized the cleaned dataset into usage by status of the building
+and counted how many buildings were in those categories. 
+I chose horizontal bars, as these are better for
+comparing categories with long names. 
+The x-axis is the number of buildings 
+and the y-axis is types of usage (sorted by count).
+I used steel blue for the bars because
+it is simple and easy to read the chart.
+<p>
+
+<p>
+I also added a dropdown menu where the user 
+can select different building statuses
+(Abandon, In Progress, In Use). 
+The chart updates to reflect the chosen status,
+allowing for easier comparison of building usage patterns 
+without overwhelming the user with information.
+You can also mouse over the bars to 
+see the exact counts and categories.
+<p>
+  
 <h2>Chart 2: Building Size vs. Construction Year</h2>
 <div id="chart2"></div>
+
+<h3>Chart 2 Analysis</h3>
+
+<p>
+This scatter plot shows the relationship between constructionyear 
+and building size in Illinois. The x-axis represents the
+year constructed, and the y-axis represents square footage.
+I used quantitative encoding for both axes and categorical
+color encoding for building status. Different colors help
+distinguish buildings that are Abandon, In Progress, or In Use.
+I also used transparent circles to reduce overlapping points
+and make the distribution easier to see.
+</p>
+
+<p>
+For data preparation, I filtered the dataset to include
+construction years between 1850 and 2026 and randomly
+sampled up to 3,000 buildings to improve readability.
+I used a symmetric logarithmic scale for square footage
+because building sizes vary widely. I also added tooltips
+so users can hover over individual points to see the
+building name, city, construction year, square footage,
+and building status. This makes it easier to explore
+individual buildings without overcrowding the chart.
+</p>
 
 <h2>Data and Notebook</h2>
 <p>
