@@ -1,0 +1,44 @@
+
+---
+layout: default
+title: IS445 Homework 5.1
+---
+
+<h1>IS445 Homework 5.1</h1>
+<h2>Illinois Building Inventory Visualizations</h2>
+
+<p>
+This project explores building usage, construction years,
+and building sizes in Illinois.
+</p>
+
+<h2>Chart 1: Building Counts by Usage Type</h2>
+<div id="chart1"></div>
+
+<h2>Chart 2: Building Size vs. Construction Year</h2>
+<div id="chart2"></div>
+
+<h2>Data and Notebook</h2>
+<p>
+<a href="https://github.com/UIUC-iSchool-DataViz/is445_data/blob/main/building_inventory.csv">
+Original Dataset
+</a>
+</p>
+
+<p>
+<a href="https://github.com/Kyra-720/Kyra-720.github.io/blob/main/hw5/IS445_HW5.ipynb">
+Python Notebook
+</a>
+</p>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+<script>
+vegaEmbed("#chart1", "./chart1.json")
+  .catch(console.error);
+
+vegaEmbed("#chart2", "./chart2.json")
+  .catch(console.error);
+</script>
